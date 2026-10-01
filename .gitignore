@@ -1,0 +1,19 @@
+# Build output and scratch (workspace hygiene rubric, toke/docs/repo-hygiene.md)
+*.ll
+*.o
+*.a
+*.dSYM/
+build/
+dist/
+results/
+.DS_Store
+__pycache__/
+.pytest_cache/
+
+# Model artefacts and data never go in git (AGENTS.md §4.4)
+models/
+weights/
+*.bin
+*.safetensors
+*.jsonl
+data/
